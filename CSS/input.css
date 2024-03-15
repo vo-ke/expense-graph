@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.graph-container{
+    @apply min-w-[14.285%] flex items-center px-1 ibw:px-2 flex-col-reverse;
+}
+
+.graph{
+    @apply w-full bg-[#ec775f] rounded-sm tab:rounded-md cursor-pointer transition-all duration-300;
+}
+.date{
+    @apply mt-3 font-bold text-sm  text-[#93867bff];
+}
+.graph:hover{
+    @apply bg-[#fcc9bf] ; 
+}
+.json{
+    @apply absolute opacity-0 -top-8 tab:-top-12 ibw:-left-2 -left-1 h-6 tab:h-10 text-[10px] tab:text-sm ibw:text-base bg-[#382314] rounded-sm tab:rounded-md flex items-center justify-center text-white font-bold transition-opacity duration-500 ease-in-out;
+    width: calc(100% + 8px);
+    @screen ibw{
+        width: calc(100% + 16px);
+    };
+}
+
+
+
+
+.graph:hover #json1{
+    @apply opacity-100;
+}
+.graph:hover #json2{
+    @apply opacity-100;
+}
+.faux:hover #json3{
+    @apply opacity-100;
+}
+.graph:hover #json4{
+    @apply opacity-100;
+}
+.graph:hover #json5{
+    @apply opacity-100;
+}
+.graph:hover #json6{
+    @apply opacity-100;
+}
+.graph:hover #json7{
+    @apply opacity-100;
+}

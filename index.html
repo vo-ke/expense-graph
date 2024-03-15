@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/output.css">
+</head>
+<body class="bg-[#f8e9ddff] font-DM flex tab:items-center justify-center min-h-screen">
+<div id="invisible" class="my-14 tab:my-10  min-w-full minL:min-w-[44rem]">
+  <!-- 1st half -->
+<div id="dashboard" class="mx-3 p-4 tab:p-7 minL:p-9 relative text-white flex bg-[#ec775f]  rounded-lg">
+  <div>
+    <p>
+      My balance
+    </p>
+    <div class="font-bold text-3xl minL:text-4xl mb-2 tab:mb-1 mt-1">$921.48</div>
+    <img class="absolute inset-y-6 right-5 tab:right-7 tab:inset-y-10 minL:inset-y-12 minL:right-9" src=".\images\logo.svg">
+  </div>
+</div>
+<!-- 2nd half -->
+<div class="bg-white  text-[#382314] rounded-xl mx-3 mt-5 px-4 tab:px-7 minL:px-9 py-7 tab:py-10 minL:pt-12">
+  <h2 class="text-xl sm2:text-2xl tab:text-3xl ibw:text-4xl font-black">
+    Spending - Last 7 days
+  </h2>
+  <div class="flex min-h-64 tab:min-h-72" >
+    <div class="graph-container">
+      <div class="date">mon</div>
+      <div id="first" class="graph h-16 relative"><div class="json" id="json1"></div></div>
+    </div>
+    <div class="graph-container">
+      <div class="date">tue</div>
+      <div id="second" class="graph h-28 relative"><div class="json" id="json2"></div></div>
+    </div>
+    <div class="graph-container">
+      <div class="date">wed</div>
+      <div id="third" class="faux relative h-44 w-full cursor-pointer transition-all ease-in-out duration-300 bg-[#76b5bc] hover:bg-[#b3ebf1] rounded-sm tab:rounded-md">
+        <div class="json" id="json3"></div>
+      </div>
+    </div>
+    <div class="graph-container">
+      <div class="date">thu</div>
+     <div id="fourth" class="graph h-24 relative"> <div class="json" id="json4"></div></div>
+    </div>
+    <div class="graph-container">
+      <div class="date">fri</div>
+      <div id="fifth" class="relative graph h-[75px]"><div class="json" id="json5"></div></div>
+    </div>
+    <div class="graph-container">
+      <div class="date">sat</div>
+      <div id="sixth" class="relative graph h-36"><div class="json" id="json6"></div></div>
+    </div>
+    <div class="graph-container">
+      <div class="date">sun</div>
+      <div id="seventh" class="graph h-[87px] relative"><div class="json " id="json7"></div></div>
+    </div>
+  </div>
+  <!-- divider -->
+  <div class="my-6 w-full h-[2px] bg-[#f8e9dd]"></div>
+  <footer class="relative h-20">
+    <h2 class="text-[#93867bff] font-semibold mb-1.5">
+      Total this month
+    </h2>
+    <price class="text-[#382314] font-black text-3xl tab:text-4xl ibw:text-5xl">
+      $478.33
+    </price>
+    <div class="text-[#382314] font-black tab:text-xl absolute right-0 bottom-7 sm2:bottom-8 ibw:bottom-6">
+      +2.4%
+    </div>
+    <last class="absolute right-0 bottom-3 ibw:bottom-0 text-[#93867bff] font-semibold text-sm sm2:text-base">
+      from last month
+    </last>
+  </footer>
+</div>
+</div>
+
+  <script src="default.js"></script>
+</body>
+</html>
